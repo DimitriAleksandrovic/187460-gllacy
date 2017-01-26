@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
+    
 	</head>
 	<body>
   	<header class="main_header">
@@ -85,24 +86,28 @@
 
     		<div class="catalog_gallery">
     			<div class="catalog_item hit">
-    				<img src="img\item_cream1.jpg" width="267" height="267">
+    				<img src="img/item_cream1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <b>310 Р/кг</b>
     				<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="button" href="#">Быстрый просмотр</a>
     			</div>
     			<div class="catalog_item hit">
-            <img src="img\item_cream2.jpg" width="267" height="267">
+            <img src="img/item_cream2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
     				<b>380 Р/кг</b>
     				<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="button" href="#">Быстрый просмотр</a>
     			</div>
     			<div class="catalog_item hit">
-            <img src="img\item_cream3.jpg" width="267" height="267">
+            <img src="img/item_cream3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
     				<b>355 Р/кг</b>
     				<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="button" href="#">Быстрый просмотр</a>
     			</div>
     			<div class="catalog_item hit">
-            <img src="img\item_cream4.jpg" width="267" height="267">
+            <img src="img/item_cream4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
     				<b>415 Р/кг</b>
     				<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a class="button" href="#">Быстрый просмотр</a>
     			</div>
     		</div>
 
@@ -130,22 +135,23 @@
       				<button class="button" type="submit">Отправить</button>
       			</form>
       		</div>
-
+        </div>
       </div>
   		
       <div class="map">
   			<img src="img/map_marker.png" width="80" height="140">
+        <div class="centred">
+          <div class="feedback">
+            <p>Адрес главного офиса и офлайн магазина:</p>
+            <b class="feedback_boldtxt">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+            <p>Для заказов по телефону:</p>
+            <b class="feedback_boldtxt">8 812 450-25-25</b>
+            <p>(с 10 до 20 ежедневно)</p>
+            <button class="button feedback_button" type="button">Форма обратной связи</button>
+          </div>
+        </div>
       </div>
-      <div class="centred">
-  			<div class="feedback">
-  				<p>Адрес главного офиса и офлайн магазина:</p>
-  				<b class="feedback_boldtxt">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-  				<p>Для заказов по телефону:</p>
-  				<b class="feedback_boldtxt">8 812 450-25-25</b>
-  				<p>(с 10 до 20 ежедневно)</p>
-  				<button class="button feedback_button" type="button">Форма обратной связи</button>
-  			</div>
-      </div>
+        
   		
   	</main>
 
@@ -176,7 +182,7 @@
         <input type="text" name="feedback_name" placeholder="Как вас зовут?">
         <input type="email" name="feedback_email" placeholder="Ваша почта для ответа?">
         <textarea placeholder="Напишите что-нибудь..."></textarea>
-        <input type="submit" name="">
+        <input type="submit" name="feedback">
       </form>
     </div>
  	</body>
