@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
   	<header class="main_header">
@@ -32,14 +32,14 @@
 								<table>
 									<tr>
 										<td><img src="img/close.svg" width="" height=""></td>
-										<td><img src="img/item_cream1_basketprev.jpg" width="33" height="33"></td>
+										<td><img src="img/item_cream1_basketprev.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
 										<td>Пломбир с апельсиновым джемом</td>
 										<td>1,5 кг х <span>200 руб.</span></td>
 										<td>300 руб.</td>
 									</tr>
 									<tr>
 										<td><img src="img/close.svg" width="" height=""></td>
-										<td><img src="img/item_cream3_basketprev.jpg" width="33" height="33"></td>
+										<td><img src="img/item_cream3_basketprev.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
 										<td>Клубничный пломбир с присыпкой из белого шоколада</td>
 										<td>1,5 кг х <span>300 руб.</span></td>
 										<td>450 руб.</td>
@@ -96,14 +96,10 @@
 
     			<p>Жирность</p>
   	  			<div class="sorting sorting_fat">
-  	  				<input type="radio" name="sort_fat_0" id="sort_fat_0">
-  	  				<label for="sort_fat_0"> 0 % </label>
-  	  				<input type="radio" name="sort_fat_10" id="sort_fat_10" checked>
-  	  				<label for="sort_fat_10"> до 10 % </label>
-  	  				<input type="radio" name="sort_fat_30" id="sort_fat_30">
-  	  				<label for="sort_fat_30"> до 30 % </label>
-  	  				<input type="radio" name="sort_fat_30+" id="sort_fat_30+">
-  	  				<label for="sort_fat_0"> выше 30 % </label>
+  	  				<label><input type="radio" name="sort_fat" value="0"> 0 % </label>
+  	  				<label><input type="radio" name="sort_fat" value="10" checked> до 10 % </label>
+  	  				<label><input type="radio" name="sort_fat" value="30"> до 30 % </label>
+  	  				<label><input type="radio" name="sort_fat" value="30+"> выше 30 % </label>
   	  			</div>
   	  		
   	  		<p>Наполнители</p>
@@ -124,73 +120,73 @@
 
     		<div class="catalog_gallery">
     			<div class="catalog_item">
-      			<img src="img/item_cream1.jpg" width="267" height="267">
+      			<img src="img/item_cream1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <b>310 Р/кг</b>
       			<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <a class="button" href="#">Быстрый просмотр</a>
       		</div>
       		<div class="catalog_item">
-            <img src="img/item_cream2.jpg" width="267" height="267">
+            <img src="img/item_cream2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
       			<b>380 Р/кг</b>
       			<a href="#">Сливочно-кофейное с кусочками шоколада</a>
             <a class="button" href="#">Быстрый просмотр</a>
       		</div>
       		<div class="catalog_item item_active">
-            <img src="img/item_cream3.jpg" width="267" height="267">
+            <img src="img/item_cream3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
       			<b>355 Р/кг</b>
       			<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
       			<a class="button" href="#">Быстрый просмотр</a>
       		</div>
       		<div class="catalog_item">
-            <img src="img/item_cream4.jpg" width="267" height="267">
+            <img src="img/item_cream4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
       			<b>415 Р/кг</b>
       			<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
             <a class="button" href="#">Быстрый просмотр</a>
       		</div>
     			<div class="catalog_item">
-      			<img src="img/item_cream5.jpg" width="267" height="267">
+      			<img src="img/item_cream5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
     				<b>325 Р/кг</b>
     				<a href="#">Сливочное с брусничным джемом</a>
             <a class="button" href="#">Быстрый просмотр</a>
     			</div>
     			<div class="catalog_item">
-      			<img src="img/item_cream6.jpg" width="267" height="267">
+      			<img src="img/item_cream6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
     				<b>410 Р/кг</b>
     				<a href="#">Сливочно-черничное с цельными ягодами черники</a>
             <a class="button" href="#">Быстрый просмотр</a>
     			</div>
     			<div class="catalog_item">
-      			<img src="img/item_cream7.jpg" width="267" height="267">
+      			<img src="img/item_cream7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
     				<b>375 Р/кг</b>
     				<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
             <a class="button" href="#">Быстрый просмотр</a>
     			</div	>
     			<div class="catalog_item">
-      			<img src="img/item_cream8.jpg" width="267" height="267">
+      			<img src="img/item_cream8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
     				<b>320 Р/кг</b>
     				<a href="#">Сливочное с шоколадной стружкой</a>
             <a class="button" href="#">Быстрый просмотр</a>
     			</div>
     			<div class="catalog_item">
-      			<img src="img/item_cream9.jpg" width="267" height="267">
+      			<img src="img/item_cream9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
     				<b>440 Р/кг</b>
     				<a href="#">Сливочно-ванильное с кусочками шоколада</a>
             <a class="button" href="#">Быстрый просмотр</a>
     			</div>
     			<div class="catalog_item">
-      			<img src="img/item_cream10.jpg" width="267" height="267">
+      			<img src="img/item_cream10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
     				<b>435 Р/кг</b>
     				<a href="#">Сливочноe с ментоловым сиропом</a>
             <a class="button" href="#">Быстрый просмотр</a>
     			</div>
     			<div class="catalog_item">
-      			<img src="img/item_cream11.jpg" width="267" height="267">
+      			<img src="img/item_cream11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
     				<b>355 Р/кг</b>
     				<a href="#">Сливочное с кусочками черного шоколада</a>
             <a class="button" href="#">Быстрый просмотр</a>
     			</div>
     			<div class="catalog_item">
-      			<img src="img/item_cream12.jpg" width="267" height="267">
+      			<img src="img/item_cream12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
     				<b>420 Р/кг</b>
     				<a href="#">Сливочное с мятным сиропом</a>
             <a class="button" href="#">Быстрый просмотр</a>
@@ -224,7 +220,7 @@
 	  			<a href="#">Экологические стандарты</a>
 	  		</div>
 	  		<div class="footer_contacts">
-	  			<a href="https://htmlacademy.ru" target="_blank"><img src="img/htmlacademy_logo.png" width="108" height="38"></a>
+	  			<a href="https://htmlacademy.ru" target="_blank"><img src="img/htmlacademy_logo.png" width="108" height="38" alt="htmlacademy.ru"></a>
 	  			<p>Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> © 2017</p>
 	  		</div>
 	  	</div>	
