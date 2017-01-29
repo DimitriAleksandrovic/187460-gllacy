@@ -1,20 +1,219 @@
+@font-face {
+	font-family: Roboto;
+    src: url(../fonts/roboto.woff),
+    	url(../fonts/roboto.woff2);
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+	font-family: Roboto;
+    src: url(../fonts/robotomedium.woff),
+    	url(../fonts/robotomedium.woff2);
+    font-weight: normal;
+    font-style: normal;}   
+
 body {
-	font-family: "Roboto", "Arial", sans-serif;
+	font-family: Roboto, Arial, sans-serif;
 	font-weight: medium;
-	font-size: 16pt;
-	line-height: 22pt;
+	font-size: 16px;
+	line-height: 22px;
 	text-align: center;
+	/*background-color: rgb(132, 157, 143);*/
 }
 
 h1 {
 	font-weight: bold;
-	font-size: 60pt;
-	line-height: 60.35pt;
+	font-size: 60px;
+	line-height: 60.35px;
 }
 
 h2 {
 	font-weight: bold;
-	font-size: 35pt;
-	line-height: 41pt;
+	font-size: 35px;
+	line-height: 41px;
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.centred {
+	margin: 0 auto;
+	width: 1200px;
+	min-height: 64px;
+
+}
+
+.main_header {
+	margin-top: 10px;
+	width: 100%;
+	min-height: 114px;
+	background-color: rgba(0, 255, 0, 0.2);
+}
+
+.main_logo {
+	float: left;
+	margin-left: 2.3%;
+	padding-right: 24px;
+	width: 154px;
+	min-height: 64px;
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+.main_menu {
+	float: left;
+	width: 383px;
+	min-height: 64px;
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+.submenu,
+.searching_field,
+.login,
+.basket_content,
+.feedback_form {
+	display: none;
+}
+
+.user_block {
+	float: right;
+	margin-right: 2.3%;
+	width: 267px;
+	min-height: 64px;
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+.workday {
+	float: right;
+	margin-right: 2.3%;
+	width: 267px;
+	min-height: 41px;
+	text-align: right;
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+.main_content {
+	width: 100%;
+	background-color: rgba(0, 255, 0, 0.2);
+}
+
+.slider_switch {
+	float: left;
+}
+
+.offerta {
+	background-color: rgba(0, 0, 255, 0.2);
+}
+
+.offerta_berry,
+.offerta_chocolata {
+	float: left;
+	margin-left: 2.3%;
+	width: 560px;
+	min-height: 229px;
+	text-align: left;
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+.offerta_chocolata {
+	margin-left: 2.2%;
+}
+
+.catalog_gallery {
+	margin-top: 40px;
+	font-size: 0;
+	background-color: rgba(0, 0, 255, 0.2);
+}
+
+.catalog_item {
+	display: inline-block;
+	vertical-align: top;
+	width: 267px;
+	min-height: 322px;
+	/*margin-left: 2.2%;*/
+	margin: 0 1.1%;
+	margin-bottom: 40px;
+	font-size: 16px;
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+/*.catalog_item:nth-child(4n+1) {
+	margin-right: 2.3%;*/
+}
+
+.shop_description {
+	width: 1147px;
+	height: 307px;
+	margin-top: 40px;
+	margin-left: 2.3%;	
+	background-color: rgba(0, 0, 255, 0.2);
+}
+
+.extra_info {
+	margin-top: 40px;
+	background-color: rgba(0, 0, 255, 0.2);
+}
+
+.blog_new,
+.not_spam {
+	float: left;
+	width: 560px;
+	min-height: 222px;
+	margin-left: 2.3%;
+	text-align: left;
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+.not_spam {
+	margin-left: 2.2%;
+}
+
+.map {
+	height: 430px;
+	margin-top: 40px;
+	background-color: rgba(0, 0, 255, 0.2);
+}
+
+.feedback {
+	float: right;
+	margin-right: 2.3%;
 	
+	width: 302px;
+	min-height: 305px;
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+.main_footer {
+	width: 100%;
+	min-height: 108px;
+	background-color: rgba(0, 255, 0, 0.2);
+}
+
+.footer_social {
+	float: left;
+	width: 267px;
+	min-height: 40px;
+	margin-left: 2.3%;
+	margin-top: 35px;
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+.footer_menu {
+	float: left;
+	width: 540px;
+	min-height: 40px;
+	margin: 0 2.2%;
+	margin-top: 35px;
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+.footer_contacts {
+	float: right;
+	width: 190px;
+	min-height: 56px;
+	margin-top: 20px;
+	margin-right: 2.3%;
+	background-color: rgba(255, 0, 0, 0.2);
+}
