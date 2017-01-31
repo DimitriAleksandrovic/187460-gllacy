@@ -144,9 +144,10 @@ h2 {
 	min-height: 307px;
 	margin: 0 2.2%;*/
 	margin-top: 40px;
-	/*margin-left: 2.3%;
+	margin: 0 2.3%;
+	padding-left: 21px;
 	border-radius: 16px;	
-	background-image: url("../img/wafer.jpg");*/
+	background-image: url("../img/wafer.jpg");
 	text-align: left;
 	color: rgb(50, 50, 50);
 	background-color: rgba(0, 0, 255, 0.2);
@@ -175,19 +176,22 @@ h2 {
 }
 
 .shop_descr_block {
-	display: inline-block;
-	width: 540px;
+	float: left;
+	width: 539px;
 	min-height: 77px;
 	margin-top: 12px;
-	margin: 0 1.1%;
+	vertical-align: top;
 	background-color: rgba(255, 0, 0, 0.2);
 }
 
-.shop_descr_block:nth-child(2n) {
+.shop_descr_block:nth-child(2n+1) {
+	/*float: right;*/
 	margin-left: 2.2%;
 }
 
-
+/*.shop_descr_block:nth-child(2n) {
+	margin-right: 2.2%;
+}*/
 
 .extra_info {
 	margin-top: 40px;
