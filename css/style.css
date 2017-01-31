@@ -141,7 +141,7 @@ h2 {
 
 .shop_description {
 	/*width: 100%;
-	height: 307px;
+	min-height: 307px;
 	margin: 0 2.2%;*/
 	margin-top: 40px;
 	/*margin-left: 2.3%;
