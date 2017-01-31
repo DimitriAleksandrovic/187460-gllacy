@@ -9,12 +9,12 @@
 	font-family: Roboto;
     src: url(../fonts/robotomedium.woff),
     	url(../fonts/robotomedium.woff2);
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;}   
 
 body {
 	font-family: Roboto, Arial, sans-serif;
-	font-weight: medium;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
 	text-align: center;
@@ -139,17 +139,55 @@ h2 {
 	background-color: rgba(255, 0, 0, 0.2);
 }
 
-/*.catalog_item:nth-child(4n+1) {
-	margin-right: 2.3%;*/
-}
-
 .shop_description {
-	width: 1147px;
+	/*width: 100%;
 	height: 307px;
+	margin: 0 2.2%;*/
 	margin-top: 40px;
-	margin-left: 2.3%;	
+	/*margin-left: 2.3%;
+	border-radius: 16px;	
+	background-image: url("../img/wafer.jpg");*/
+	text-align: left;
+	color: rgb(50, 50, 50);
 	background-color: rgba(0, 0, 255, 0.2);
 }
+
+.shop_descr_img {
+	float: left;
+	width: 48px;
+	min-height: 49px;
+}
+
+.icecream {
+	background-image: url("../img/icecream.png");
+}
+
+.cow {
+	background-image: url("../img/cow.png");
+}
+
+.leaf {
+	background-image: url("../img/leaf.png");
+}
+
+.term {
+	background-image: url("../img/term.png");
+}
+
+.shop_descr_block {
+	display: inline-block;
+	width: 540px;
+	min-height: 77px;
+	margin-top: 12px;
+	margin: 0 1.1%;
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+.shop_descr_block:nth-child(2n) {
+	margin-left: 2.2%;
+}
+
+
 
 .extra_info {
 	margin-top: 40px;
