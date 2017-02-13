@@ -22,7 +22,7 @@
       			</div>
       			<nav class="main_menu">
     					<ul>
-    						<li><a class="catalog" href="catalog.html">Каталог</a>
+    						<li class="catalog_list"><a href="catalog.html">Каталог</a>
     							<ul class="catalog_submenu">
     								<li><a href="#">Новинки</a></li>
     								<li><a href="#">Сливочное</a></li>
@@ -170,12 +170,14 @@
           			<p>Новое в нашем блоге</p>
           			<h3>10 способов сервировки <br>фруктовых щербетов <br>к столу</h3>
           		</a>
-          		<div class="not_spam">
-          			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          			<form action="#" method="post">
-          				<input type="email" name="subscribe_email" placeholder="Электронная почта">
-          				<button class="button" type="submit">Отправить</button>
-          			</form>
+          		<div class="notspam_backgr">
+            		<div class="notspam">	
+                  <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            			<form action="#" method="post">
+            				<input type="email" name="subscribe_email" placeholder="Электронная почта">
+            				<button class="button" type="submit">Отправить</button>
+            			</form>
+                </div>  
           		</div>
             </div>
           </div>
@@ -185,12 +187,12 @@
       			<!--<img src="img/map_marker.png" width="80" height="140" alt="">!-->
             
               <div class="feedback">
-                <p>Адрес главного офиса и офлайн магазина:</p>
-                <b class="feedback_boldtxt">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+                <p>Адрес главного офиса <br>и офлайн магазина:</p>
+                <b class="feedback_boldtxt">ул. Большая Конюшенная <br>19/8, Санкт-Петербург</b>
                 <p>Для заказов по телефону:</p>
                 <b class="feedback_boldtxt">8 812 450-25-25</b>
                 <p>(с 10 до 20 ежедневно)</p>
-                <button class="button feedback_button" type="button">Форма обратной связи</button>
+                <button class="button" type="button">Форма обратной связи</button>
               </div>
             </div>
           </div>
@@ -207,13 +209,17 @@
     	  			<a class="social-btn social-btn-vk" href="#"></a>
     	  		</div>
     	  		<div class="footer_menu">
-    	  			<a class="lovely" href="#">Для поставщиков</a>
-    	  			<a href="#">Наши документы</a>
-    	  			<a href="#">О производстве</a>
-    	  			<a href="#">Экологические стандарты</a>
+      	  		<div class="footer_menu_col1">	
+                <a class="lovely" href="#">Для поставщиков</a>
+      	  			<a href="#">О производстве</a>
+              </div>
+              <div class="footer_menu_col2">
+                <a href="#">Наши документы</a>
+      	  			<a href="#">Экологические стандарты</a>
+              </div>  
     	  		</div>
     	  		<div class="footer_contacts">
-    	  			<a href="https://htmlacademy.ru" target="_blank"><img src="img/htmlacademy_logo.png" width="108" height="38" alt="htmlacademy.ru"></a>
+    	  			<a class="footer_logo" href="https://htmlacademy.ru" target="_blank"><img src="img/htmlacademy_logo.png" width="108" height="38" alt="htmlacademy.ru"></a>
     	  			<p>Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> © 2017</p>
     	  		</div>
     	  	</div>	

@@ -47,18 +47,18 @@
 							<div class="basket_items">
 								<table>
 									<tr>
-										<td><img src="img/close.svg" width="" height=""></td>
+										<td><img src="img/close.png" width="10" height="10"></td>
 										<td><img src="img/item_cream1_basketprev.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-										<td>Пломбир с апельсиновым джемом</td>
-										<td>1,5 кг х <span>200 руб.</span></td>
-										<td>300 руб.</td>
+										<td class="table_txt">Пломбир с апельсиновым джемом</td>
+										<td class="table_price">1,5 кг х <span>200 руб.</span></td>
+										<td class="table_price">300 руб.</td>
 									</tr>
 									<tr>
-										<td><img src="img/close.svg" width="" height=""></td>
+										<td><img src="img/close.png" width="10" height="10"></td>
 										<td><img src="img/item_cream3_basketprev.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-										<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-										<td>1,5 кг х <span>300 руб.</span></td>
-										<td>450 руб.</td>
+										<td class="table_txt">Клубничный пломбир с присыпкой из белого шоколада</td>
+										<td class="table_price">1,5 кг х <span>300 руб.</span></td>
+										<td class="table_price">450 руб.</td>
 									</tr>
 								</table>
 								<div class="full_price">
@@ -83,54 +83,68 @@
     		<div class="breadcrumbs">
     			<ul>
     				<li><a href="index.html">Главная</a></li>
-    				<li><a href="#">Каталог</a></li>
+            <li> » </li>
+    				<li><a>Каталог</a></li>
+            <li> » </li>
     				<li>Сливочное</li>
     			</ul>
     		</div>
     		<h1 class="headline2">Сливочное мороженое</h1>
-    		<form action="#" method="get">
-    			<label for="sort_pop">Сортировка</label>
-    			
-    			<select id="sort_pop" name="sort_pop">
-    				<option value="popular" selected>по популярности</option>
-    				<option value="chip_first">сначала недорогие</option>
-    				<option value="expensive_first">сначала дорогие</option>
-    				<option value="fat">по жирности</option>
-    			</select>
 
-    			<div class="prices_range">
+    		<form class="filter clearfix" action="#" method="get">
+    			
+          <div class="select">
+          <label for="sort_pop"><p>Сортировка</p></label>
+    			  <div class="select_inner">
+              <select id="sort_pop" name="sort_pop">
+        				<option value="popular" selected>по популярности</option>
+        				<option value="chip_first">сначала недорогие</option>
+        				<option value="expensive_first">сначала дорогие</option>
+        				<option value="fat">по жирности</option>
+        			</select>
+            </div>  
+          </div>
+
+    			<div class="range">
     				<p>Цена: 100 руб. – 500 руб.</p>
-    				<div class="sorting">
+    				<div class="range_inner">
     					<div class="strip">
-    						<div class="round"></div>
+    						<div class="round1"></div>
     						<div class="strip_bold"></div>
-    						<div class="round"></div>
+    						<div class="round2"></div>
     					</div>
     				</div>
     			</div>
 
-    			<p>Жирность</p>
-  	  			<div class="sorting sorting_fat">
-  	  				<label><input type="radio" name="sort_fat" value="0"> 0 % </label>
-  	  				<label><input type="radio" name="sort_fat" value="10" checked> до 10 % </label>
+    			<div class="radio">
+          <p>Жирность</p>
+  	  			<div class="radio_inner">
+  	  				<input type="radio" name="sort_fat" value="0" id="f0">
+              <label for="f0"> 0 % </label>
+  	  				<input type="radio" name="sort_fat" value="10" id="f10" checked>
+              <label for="f10"> до 10 % </label>
   	  				<label><input type="radio" name="sort_fat" value="30"> до 30 % </label>
   	  				<label><input type="radio" name="sort_fat" value="30+"> выше 30 % </label>
   	  			</div>
+          </div>
   	  		
-  	  		<p>Наполнители</p>
-  	  			<div class="sorting sorting_add">
-  	  				<input type="checkbox" name="add_choco" id="add_choco" checked>
+  	  		<div class="check">
+          <p>Наполнители</p>
+  	  			<div class="check_inner">
+  	  				<input type="checkbox" name="choco" id="choco" checked>
   	  				<label for="add_choco"> шоколадные </label>
-  	  				<input type="checkbox" name="add_sugar" id="add_sugar" checked>
+  	  				<input type="checkbox" name="sugar" id="sugar" checked>
   	  				<label for="add_sugar"> сахарные присыпки </label>
-  	  				<input type="checkbox" name="add_fruit" id="add_fruit">
+  	  				<input type="checkbox" name="fruit" id="fruit">
   	  				<label for="add_fruit"> фрукты </label>
-  	  				<input type="checkbox" name="add_syrup" id="add_syrup">
+  	  				<input type="checkbox" name="syrup" id="syrup">
   	  				<label for="add_syrup"> сиропы </label>
-  	  				<input type="checkbox" name="add_jam" id="add_jam">
-  	  				<label for="add_jam"> джемы </label>
+  	  				<input type="checkbox" name="jam" id="jam">
+  	  				<label for="jam"> джемы </label>
   	  			</div>
   	  		<button type="submit">Применить</button>
+          </div>
+
     		</form>
 
     		<div class="catalog_gallery clearfix">
@@ -233,24 +247,28 @@
   	</main>
 
   	<footer class="main_footer">
-  		<div class="centred">
-	  		<div class="footer_social">
-	  			<a class="social-btn social-btn-tw" href="#"></a>
-	  			<a class="social-btn social-btn-inst" href="#"></a>
-	  			<a class="social-btn social-btn-fb" href="#"></a>
-	  			<a class="social-btn social-btn-vk" href="#"></a>
-	  		</div>
-	  		<div class="footer_menu">
-	  			<a class="lovely" href="#">Для поставщиков</a>
-	  			<a href="#">Наши документы</a>
-	  			<a href="#">О производстве</a>
-	  			<a href="#">Экологические стандарты</a>
-	  		</div>
-	  		<div class="footer_contacts">
-	  			<a href="https://htmlacademy.ru" target="_blank"><img src="img/htmlacademy_logo.png" width="108" height="38" alt="htmlacademy.ru"></a>
-	  			<p>Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> © 2017</p>
-	  		</div>
-	  	</div>	
-  	</footer>
+          <div class="centred clearfix">
+            <div class="footer_social">
+              <a class="social-btn social-btn-tw" href="#"></a>
+              <a class="social-btn social-btn-inst" href="#"></a>
+              <a class="social-btn social-btn-fb" href="#"></a>
+              <a class="social-btn social-btn-vk" href="#"></a>
+            </div>
+            <div class="footer_menu">
+              <div class="footer_menu_col1">  
+                <a class="lovely" href="#">Для поставщиков</a>
+                <a href="#">О производстве</a>
+              </div>
+              <div class="footer_menu_col2">
+                <a href="#">Наши документы</a>
+                <a href="#">Экологические стандарты</a>
+              </div>  
+            </div>
+            <div class="footer_contacts">
+              <a class="footer_logo" href="https://htmlacademy.ru" target="_blank"><img src="img/htmlacademy_logo.png" width="108" height="38" alt="htmlacademy.ru"></a>
+              <p>Сделано в <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a> © 2017</p>
+            </div>
+          </div>  
+        </footer>
  	</body>
 </html>
