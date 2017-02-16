@@ -14,8 +14,8 @@
   					<img src="img/logo.png" width="154" height="64" alt="Gllacy Shop">
   				</a>
   			</div>
-  			<nav class="main_menu">
-					<ul>
+  			<nav>
+					<ul class="main_menu">
 						<li><a class="current" href="#">Каталог</a></li>
 						<li><a href="#">Доставка</a></li>
 						<li><a href="#">О компании</a></li>
@@ -43,7 +43,7 @@
             </div>
 					<div class="basket_full">
 						<a class="basket_content" href="#">2 товара</a>
-						
+						<div class="basket_wrap">
 							<div class="basket_items">
 								<table>
 									<tr>
@@ -66,7 +66,7 @@
 								</div>
 								<a class="button" href="#">Оформить заказ</a>
 							</div>
-						
+						</div>
 					</div>
 				</div>
    		</div>
@@ -123,8 +123,10 @@
               <label for="f0"> 0 % </label>
   	  				<input type="radio" name="sort_fat" value="10" id="f10" checked>
               <label for="f10"> до 10 % </label>
-  	  				<label><input type="radio" name="sort_fat" value="30"> до 30 % </label>
-  	  				<label><input type="radio" name="sort_fat" value="30+"> выше 30 % </label>
+  	  				<label><input type="radio" name="sort_fat" value="30" id="f30">
+              <label for="f30"> до 30 % </label>
+  	  				<label><input type="radio" name="sort_fat" value="30+" id="f30+">
+              <label for="f30+"> выше 30 % </label>
   	  			</div>
           </div>
   	  		
@@ -132,13 +134,13 @@
           <p>Наполнители</p>
   	  			<div class="check_inner">
   	  				<input type="checkbox" name="choco" id="choco" checked>
-  	  				<label for="add_choco"> шоколадные </label>
+  	  				<label for="choco"> шоколадные </label>
   	  				<input type="checkbox" name="sugar" id="sugar" checked>
-  	  				<label for="add_sugar"> сахарные присыпки </label>
+  	  				<label for="sugar"> сахарные присыпки </label>
   	  				<input type="checkbox" name="fruit" id="fruit">
-  	  				<label for="add_fruit"> фрукты </label>
+  	  				<label for="fruit"> фрукты </label>
   	  				<input type="checkbox" name="syrup" id="syrup">
-  	  				<label for="add_syrup"> сиропы </label>
+  	  				<label for="syrup"> сиропы </label>
   	  				<input type="checkbox" name="jam" id="jam">
   	  				<label for="jam"> джемы </label>
   	  			</div>
@@ -235,16 +237,17 @@
     		</div>
 
     		<div class="paginator">
-    			<a class="prev_page disabled" href="prev"></a>
-    			<div class="current_page">1</div>
+    			<a class="page_prev disabled"></a>
+    			<a class="page_current">1</a>
     			<a href="#">2</a>
     			<a href="#">3</a>
     			<a href="#">4</a>
     			<a href="#">5</a>
-    			<a class="next_page" href="next"></a>
+    			<a class="page_next" href="#"></a>
     		</div>
       </div>
   	</main>
+    <div class="main_underline"></div>
 
   	<footer class="main_footer">
           <div class="centred clearfix">

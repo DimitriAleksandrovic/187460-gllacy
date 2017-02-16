@@ -211,20 +211,21 @@ h2 {
 }
 
 .main_menu {
+	position: relative;
 	float: left;
 	/*width: 383px;*/
 	min-height: 64px;
 }
 
-.main_menu ul {
+ ul.main_menu {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	font-size: 0;
 }
 
-.main_menu li {
-	position: relative;
+ul.main_menu > li {
+	
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 16px;
@@ -232,7 +233,7 @@ h2 {
 	font-weight: 500;
 }
 
-.main_menu a {
+ul.main_menu a {
 	display: block;
 	margin: 0px 14px;
 	margin-top: 20px;
@@ -241,7 +242,7 @@ h2 {
 	box-shadow: 0 0.5px 0 0 #ffffff;
 }
 
-.main_menu a:hover {
+ul.main_menu a:hover {
 	margin: 0;
 	margin-top: 12px;
 	padding: 7px 14px;
@@ -250,11 +251,11 @@ h2 {
 	border-radius: 15px/50%; 
 }
 
-.main_menu a:active {
+ul.main_menu a:active {
 	box-shadow: inset 0 2px 0 1px rgb(105, 105, 105);
 }
 
-.main_menu a.current {
+ul.main_menu a.current {
 	margin: 0;
 	margin-top: 12px;
 	padding: 8px 14px;
@@ -270,25 +271,39 @@ h2 {
 
 .catalog_submenu {
 	position: absolute;
+	z-index: 20;
 	display: block;
 	top: 50px;
-	left: -8px;
+	left: 0px;
+	padding: 6px;
 	width: 144px;
 	border-radius: 5px;
+	text-align: left;
 	background-color: rgb(248, 247, 244);
-
+	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .catalog_submenu li {
+	display: block;
 	margin: 0;
 	padding: 0;
-	text-align: left;
+	
 }
 
-.catalog_submenu a {
+a.submenu_link {
 	display: block;
-	
+	margin-top: 0;
+	padding: 6px 0;
+	font-size: 14px;
+	line-height: 16px;
 	color: #323232;
+
+}
+
+a.submenu_link:hover {
+	margin-top: 0;
+	padding: 6px 0;
+	background-color: #fbded8;
 }
 
 .user_block {
@@ -322,6 +337,15 @@ h2 {
 	cursor: pointer;
 }
 
+.search_wrap {
+	position: absolute;
+	width: 33px;
+	height: 40px;
+	border-radius: 50% 50% 0 0;
+	top: 0;
+	left: 0;
+}
+
 .search_form:hover {
 	background: rgb(248, 247, 244) url("../img/spritesheet.png") no-repeat -3px -800px;
 }
@@ -339,7 +363,7 @@ h2 {
 	padding: 20px 15px;
 	border-radius: 5px;
 	background-color: rgb(248, 247, 244);
-	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4)
+	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .searching_field input {
@@ -353,6 +377,11 @@ h2 {
 	margin-left: 8px;
 	padding: 5px 15px;
 	border-radius: 18px/50%;
+
+}
+
+.hover_wrapper {
+	margin-bottom: 5px;
 }
 
 .basket_full {
@@ -372,19 +401,36 @@ h2 {
 	color: rgb(51, 51, 51);
 	font-size: 14px;
 	text-decoration: none;
-	
+}
+
+.login_wrap {
+	position: absolute;
+	width: 90px;
+	height: 40px;
+	border-radius: 50% 50% 0 0;
+	top: 0px;
+	left: 50px;
+}
+
+.basket_wrap {
+	position: absolute;
+	width: 105px;
+	height: 40px;
+	border-radius: 50% 50% 0 0;
+	top: 0px;
+	right: 0px;
 }
 
 .entrance:hover .login_form,
 .entrance:active .login_form {
 	display: block;
+	
 }
 
 .login_form {
 	position: absolute;
-	/*display: block;*/
 	top: 37px;
-	right: 125px;
+	right: 0px;
 	width: 237px;
 	max-height: 214px;
 	padding: 20px;
@@ -429,6 +475,7 @@ h2 {
 .entrance:hover,
 .basket:hover {
 	background-color: rgb(248, 247, 244);
+	cursor: pointer;
 }
 
 .entrance:hover .login,
@@ -506,6 +553,7 @@ h2 {
 	width: 508px;
 	height: 212px;
 	padding: 16px;
+	padding-top: 10px;
 	border-radius: 5px;
 	font-size: 13px;
 	line-height: 16px;
@@ -756,7 +804,7 @@ input[type="text"]:focus {
 }
 
 input[type="radio"],
-input[type="chechbox"] {
+input[type="checkbox"] {
 	position: absolute;
 	min-width: 1px;
 	min-height: 1px;
@@ -764,9 +812,8 @@ input[type="chechbox"] {
   pointer-events: none;
 }
 
-.radio_inner input:checked + .radio_inner label::before {
-	/*background: transparent url("../img/spritesheet.png") no-repeat -10px -913px;*/
-	border: 2px solid red;
+.radio_inner input:checked + label::before {
+	background: transparent url("../img/spritesheet.png") no-repeat -11px -913px;
 }
 
 .check_inner {
@@ -784,7 +831,26 @@ input[type="chechbox"] {
 	padding-right: 0;
 }
 
-.check_inner label::before {}
+.check_inner label::before {
+	content:"";
+	position: absolute;
+	top: 0px;
+	left: -30px;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	border: 1px solid white;
+}
+
+.check_inner label:hover::before {
+	top: -1px;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+.check_inner input:checked + label::before {
+	background: transparent url("../img/spritesheet.png") no-repeat -11px -130px;
+}
 
 .check button {
 	padding: 0 28px;
@@ -852,7 +918,7 @@ h1.headline2 {
 .catalog_gallery {
 	margin-top: 40px;
 	font-size: 0;
-	/*background-color: rgba(0, 0, 255, 0.2);*/
+	
 }
 
 .catalog_item {
@@ -1118,17 +1184,79 @@ a.blog_new {
 	font-weight: 700;
 }
 
-.feedback 
+.feedback {}
 
 .paginator {
+	position: relative;
 	float: right;
+	margin-right: 2.3%;
+	margin-top: 36px;
+	width: 180px;
+	height: 28px;
+	font-size: 0;
+	
+}
+
+.paginator a {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 4px;
+	width: 26px;
+	height: 22px;
+	border-radius: 50%;
+	text-align: middle;
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.paginator a:hover {
 	background-color: rgba(255, 0, 0, 0.2);
 }
 
+.paginator a.page_current,
+.paginator a:active {
+	color: #323232;
+	background-color: white;
+	cursor: pointer;
+}
+
+.paginator a.page_prev {
+	margin-left: 0;
+	margin-right: 15px;
+	padding: 0;
+	width: 10px;
+	height: 28px;
+	background: url("../img/spritesheet.png") -10px -837px no-repeat;
+}
+
+.paginator a.page_next {
+	margin-right: 0px;
+	margin-left: 15px;
+	padding: 0;
+	width: 10px;
+	height: 28px;
+	background: url("../img/spritesheet.png") -10px -872px no-repeat;
+}
+
+.disabled {
+	opacity: 0.2;
+}
+
 .main_footer {
-	/*margin-bottom: 25px;*/
+	/*position: relative;*/
 	width: 100%;
 	min-height: 108px;
+	
+}
+
+.main_underline {
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 1146px;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
 .footer_social {
@@ -1138,7 +1266,6 @@ a.blog_new {
 	margin-left: 2.3%;
 	margin-top: 35px;
 	text-align: left;
-	/*background-color: rgba(255, 0, 0, 0.2);*/
 }
 
 .social-btn {
