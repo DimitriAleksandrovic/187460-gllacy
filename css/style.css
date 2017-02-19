@@ -50,6 +50,9 @@ body {
 }*/
 
 .slider_radio {
+    position: absolute;
+    margin: 0;
+    padding: 0;
     min-width: 1px;
     min-height: 1px;
     opacity: 0;
@@ -192,7 +195,7 @@ body {
 }
 
 .main_header {
-    margin-top: 10px;
+    padding-top: 10px;
     width: 100%;
     min-height: 114px;
 }
