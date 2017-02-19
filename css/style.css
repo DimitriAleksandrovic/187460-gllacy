@@ -287,7 +287,6 @@ ul.main_menu > li {
 }
 
 .catalog_submenu {
-    display: block;
     position: absolute;
     z-index: 20;
     top: 30px;
@@ -320,7 +319,6 @@ ul.main_menu > li {
 
 .submenu_link {
     display: block;
-    /*margin-top: 2px;*/
     padding: 5px 20px;
     font-size: 14px;
     line-height: 16px;
