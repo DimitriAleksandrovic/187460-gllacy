@@ -1,19 +1,19 @@
 @font-face {
-    font-family: Roboto;
+    font-family: "Roboto";
     src: url(../fonts/roboto.woff), url(../fonts/roboto.woff2);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: Roboto;
+    font-family: "Roboto";
     src: url(../fonts/robotomedium.woff), url(../fonts/robotomedium.woff2);
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: Roboto;
+    font-family: "Roboto";
     src: url(https://fonts.google.com/specimen/Roboto?selection.family=Roboto);
     font-weight: bold;
     font-style: normal;
@@ -21,7 +21,7 @@
 
 body {
     min-width: 1200px;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
@@ -75,10 +75,11 @@ body {
 .slide_title {
     width: 700px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-top: -2px;
+    margin-bottom: 32px;
     font-weight: 700;
     font-size: 60px;
-    line-height: 64px;
+    line-height: 60px;
 }
 
 .button,
@@ -112,16 +113,16 @@ body {
 }
 
 .slide_button {
-    padding: 12px 42px;
+    padding: 8px 42px 10px;
     font-weight: 600;
-    font-size: 31px;
-    line-height: 41px;
+    font-size: 32px;
+    line-height: 44px;
     border-radius: 12%/50%;
 }
 
 .slider_switch {
     position: absolute;
-    bottom: 25px;
+    bottom: 22px;
     left: 0;
     z-index: 20;
     font-size: 0;
@@ -406,7 +407,7 @@ ul.main_menu > li {
 .entrance,
 .basket,
 .basket_full {
-    margin-left: 8px;
+    margin-left: 7px;
     padding: 5px 15px;
     border-radius: 18px/50%;
 }
@@ -693,6 +694,7 @@ ul.main_menu > li {
 .workday b {
     font-size: 22px;
     line-height: 24px;
+    letter-spacing: -0.01em;
 }
 
 .main_content {
@@ -754,7 +756,6 @@ ul.main_menu > li {
 .radio,
 .check {
     float: left;
-    margin-bottom: 2px;
 }
 
 .check_inner,
@@ -770,8 +771,8 @@ ul.main_menu > li {
 .range_inner,
 .radio_inner,
 .check_inner,
-.check button {
-    margin-right: 14px;
+.check_button {
+    margin-right: 12px;
     padding: 0 15px;
     padding-top: 7px;
     height: 28px;
@@ -865,13 +866,14 @@ ul.main_menu > li {
 .radio_inner {
     position: relative;
     padding-left: 35px;
+    padding-right: 20px;
     padding-top: 8px;
 }
 
 .radio_inner label {
     position: relative;
     display: inline-block;
-    padding-left: 10px;
+    padding-left: 11px;
     margin-right: 35px;
 }
 
@@ -883,7 +885,7 @@ ul.main_menu > li {
     content: "";
     position: absolute;
     top: 0px;
-    left: -20px;
+    left: -18px;
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -911,15 +913,17 @@ ul.main_menu > li {
 
 .check_inner {
     position: relative;
-    padding-left: 35px;
-    padding-right: 15px;
+    padding-left: 36px;
+    padding-right: 18px;
+    margin-right: 10px;
 }
 
 .check_inner label {
     position: relative;
     display: inline-block;
     margin-right: 35px;
-    padding-left: 14px;
+    padding-left: 12px;
+    padding-right: 2px;
 }
 
 .check_inner label:last-child {
@@ -929,7 +933,7 @@ ul.main_menu > li {
 .check_inner label::before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 1px;
     left: -20px;
     width: 18px;
     height: 18px;
@@ -947,7 +951,7 @@ ul.main_menu > li {
     background: transparent url("../img/spritesheet.png") no-repeat -11px -130px;
 }
 
-.check button {
+.check_button {
     padding: 0 28px;
     height: 35px;
     color: #ffffff;
@@ -955,12 +959,12 @@ ul.main_menu > li {
     cursor: pointer;
 }
 
-.check button:hover {
+.check_button:hover {
     color: #323232;
     background-color: #ffffff;
 }
 
-.check button:active {
+.check_button:active {
     color: #323232;
     background-color: #ededed;
     border: none;
@@ -971,13 +975,13 @@ ul.main_menu > li {
 .offerta_chocolata {
     float: left;
     margin-left: 2.3%;
-    padding: 18px;
-    width: 524px;
+    padding: 16px 20px 20px 18px;
+    width: 522px;
     min-height: 193px;
     text-align: left;
     font-size: 18px;
     line-height: 22px;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: rgba(255, 0, 0, 0.2);
 }
 
@@ -995,9 +999,13 @@ h1.headline2 {
     margin-bottom: 10px;
 }
 
+.offerta p {
+    margin-top: 16px;
+}
+
 .offerta a {
     float: right;
-    margin-top: 27px;
+    margin-top: 25px;
     height: 22px;
 }
 
@@ -1011,8 +1019,9 @@ h1.headline2 {
 }
 
 .catalog_gallery {
-    margin-top: 40px;
+    margin-top: 38px;
     font-size: 0;
+    margin-bottom: 2px;
 }
 
 .catalog_item {
@@ -1031,7 +1040,7 @@ h1.headline2 {
     z-index: 4;
     width: 61px;
     height: 61px;
-    top: 0;
+    top: 2px;
     left: 0;
     background-image: url("../img/hit.png");
     border-radius: 50%;
@@ -1039,7 +1048,7 @@ h1.headline2 {
 
 .catalog_item img {
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     z-index: 2;
     border-radius: 50%;
@@ -1058,12 +1067,12 @@ h1.headline2 {
 .catalog_item b {
     position: absolute;
     z-index: 3;
-    top: 220px;
+    top: 222px;
     left: 0;
     font-size: 45px;
     font-weight: 600;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     color: #ffffff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -1075,11 +1084,11 @@ h1.headline2 {
 
 .item_name {
     position: relative;
-    top: 278px;
+    top: 282px;
     width: 100%;
     font-size: 16px;
     line-height: 22px;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
     color: #ffffff;
     box-shadow: 0 0.5px 0 0 #ffffff;
@@ -1107,23 +1116,23 @@ h1.headline2 {
 }
 
 .shop_description {
-    /*width: 100%;
-	min-height: 307px;
-	margin: 0 2.2%;*/
-    margin-top: 40px;
+    margin-top: 42px;
     margin: 0 2.3%;
-    padding: 0 21px;
-    padding-top: 17px;
+    padding: 15px 21px;
     border-radius: 16px;
     background-image: url("../img/wafer.jpg");
     text-align: left;
     color: rgb(50, 50, 50);
-    /*background-color: rgba(0, 0, 255, 0.2);*/
 }
 
 .shop_description_h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    letter-spacing: 0.002em;
+}
+
+.shop_description p {
+    margin-bottom: 6px;
 }
 
 .shop_descr_img {
@@ -1154,11 +1163,9 @@ h1.headline2 {
 
 .shop_descr_block {
     float: left;
-    width: 539px;
+    width: 536px;
     min-height: 77px;
-    margin-top: 12px;
-    margin: 0 1.1%;
-    /*background-color: rgba(255, 0, 0, 0.2);*/
+    margin: 0 14px;
 }
 
 .shop_descr_block:nth-child(2n) {
@@ -1171,7 +1178,6 @@ h1.headline2 {
 
 .extra_info {
     margin-top: 40px;
-    /*background-color: rgba(0, 0, 255, 0.2);*/
 }
 
 .blog_new,
@@ -1179,7 +1185,6 @@ h1.headline2 {
     float: left;
     width: 46.65%;
     min-height: 222px;
-    /*margin-left: 0 1.1%;*/
     border-radius: 16px;
     text-align: left;
     background-color: #ffffff;
@@ -1188,18 +1193,37 @@ h1.headline2 {
 .blog_new {
     padding-right: 240px;
     max-width: 321px;
+    margin-left: 2.3%;
+    background: url("../img/blognew.jpg") right 50% no-repeat;
+    background-size: cover;
+    background-clip: padding-box;
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+}
+
+.blog_new_p {
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 4px;
+}
+
+.blog_new_h3 {
+    margin: 0;
+    margin-left: 20px;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .notspam_backgr {
-    /*float: right;*/
     margin-left: 2.2%;
-    /*margin-right: 2.3%;*/
     background-image: url("../img/notspam.jpg");
 }
 
 .notspam {
     margin: 6px;
-    padding: 30px 20px 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
     height: 210px;
     border-radius: 16px;
     background-color: rgb(248, 247, 244);
@@ -1208,7 +1232,7 @@ h1.headline2 {
 
 .notspam p {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
@@ -1216,34 +1240,14 @@ h1.headline2 {
 }
 
 .notspam input {
-    margin-right: 12px;
-    width: 310px;
+    margin-right: 8px;
+    padding: 12px;
+    width: 342px;
 }
 
-.blog_new {
-    margin-left: 2.3%;
-    background: url("../img/blognew.jpg") right 50% no-repeat;
-    background-size: cover;
-    background-clip: padding-box;
-}
-
-a.blog_new {
-    /*padding-left: 21px;*/
-    color: rgb(50, 50, 50);
-    text-decoration: none;
-}
-
-.blog_new p {
-    margin-left: 21px;
-    margin-bottom: 8px;
-    margin-top: 25px;
-}
-
-.blog_new_h3 {
-    margin: 0;
-    margin-left: 21px;
-    font-weight: 600;
-    text-decoration: underline;
+.notspam_button {
+    padding: 12px 18px;
+    font-weight: 500;
 }
 
 .map {
@@ -1258,9 +1262,9 @@ a.blog_new {
     float: right;
     margin-right: 2.3%;
     margin-top: 62px;
-    padding: 25px;
+    padding: 23px;
     padding-top: 30px;
-    max-width: 302px;
+    max-width: 280px;
     min-height: 250px;
     text-align: left;
     color: #323232;
@@ -1270,15 +1274,27 @@ a.blog_new {
 
 .feedback p {
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
 }
 
-.feedback b {
+.feedback_boldtxt {
+    display: block;
+    margin-bottom: 18px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
+}
+
+.phone {
+    margin-bottom: 4px;
+}
+
+.feedback_button {
+    margin-top: 25px;
+    font-weight: 600;
 }
 
 .feedback .button:active .feedback_modal,
@@ -1380,9 +1396,8 @@ a.blog_new {
 .paginator {
     position: relative;
     float: right;
-    margin-right: 2.3%;
-    margin-top: 36px;
-    width: 180px;
+    margin-right: 2.2%;
+    margin-top: 44px;
     height: 28px;
     font-size: 0;
 }
@@ -1390,6 +1405,8 @@ a.blog_new {
 .paginator a {
     display: inline-block;
     vertical-align: top;
+    margin-right: 1px;
+    margin-left: 2px;
     padding-top: 4px;
     width: 26px;
     height: 22px;
@@ -1413,7 +1430,7 @@ a.blog_new {
 
 .paginator a.page_prev {
     margin-left: 0;
-    margin-right: 15px;
+    margin-right: 13px;
     padding: 0;
     width: 10px;
     height: 28px;
@@ -1441,7 +1458,7 @@ a.blog_new {
 
 .main_underline {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 28px;
     width: 1146px;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.3);
@@ -1502,10 +1519,9 @@ a.blog_new {
     max-width: 540px;
     min-height: 40px;
     margin: 0 2.2%;
-    margin-top: 35px;
-    padding: 0 127px;
+    margin-top: 29px;
+    padding: 0 130px;
     text-align: left;
-    /*background-color: rgba(255, 0, 0, 0.2);*/
 }
 
 .footer_menu a {
@@ -1532,7 +1548,7 @@ a.blog_new {
 
 .footer_menu_col1 {
     width: 116px;
-    margin-right: 26px;
+    margin-right: 22px;
 }
 
 .footer_menu_col2 {
@@ -1557,12 +1573,11 @@ a.blog_new {
 
 .footer_contacts {
     float: right;
-    width: 190px;
+    width: 186px;
     min-height: 56px;
-    margin-top: 20px;
+    margin-top: 18px;
     margin-right: 2.3%;
     text-align: left;
-    /*background-color: rgba(255, 0, 0, 0.2);*/
 }
 
 a.footer_logo {
@@ -1572,8 +1587,9 @@ a.footer_logo {
 .footer_contacts p {
     margin: 0;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 16px;
     font-weight: 400;
+    letter-spacing: -0.008em;
     color: #ffffff;
 }
 
