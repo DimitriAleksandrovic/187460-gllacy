@@ -24,7 +24,7 @@
                 </ul>
             </nav>
             <div class="user_block">
-                <form action="#" class="search_form" method="get">
+                <form action="https://echo.htmlacademy.ru" class="search_form" method="get">
                     <div class="search_wrap">
                         <button type="submit" class="search"></button>
                         <div class="searching_field">
@@ -36,8 +36,10 @@
                     <a class="login" href="#">Вход</a>
                     <div class="login_wrap">
                         <form class="login_form" action="#">
-                            <input type="text" name="login_field" placeholder="Электронная почта">
-                            <input type="password" name="password_field" placeholder="Пароль">
+                            <input class="text_field" id="email" type="text" name="login_field" placeholder="Электронная почта">
+                            <label class="text_field_label_email" for="email">Электронная почта</label>
+                            <input class="text_field" id="pass" type="password" name="password_field" placeholder="Пароль">
+                            <label class="text_field_label_pass" for="pass">Пароль</label>
                             <input class="button" type="submit" value="Войти">
                             <div class="login_form_links">
                                 <a href="#">Забыли пароль?</a>
@@ -98,7 +100,7 @@
                 </ul>
             </div>
             <h1 class="headline2">Сливочное мороженое</h1>
-            <form class="filter clearfix" action="#" method="get">
+            <form class="filter clearfix" action="https://echo.htmlacademy.ru" method="get">
                 <div class="select">
                     <p>Сортировка</p>
                     <select class="select_list" name="sort_pop">

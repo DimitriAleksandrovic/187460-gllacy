@@ -39,7 +39,7 @@
                         </ul>
                     </nav>
                     <div class="user_block">
-                        <form action="#" class="search_form" method="get">
+                        <form action="https://echo.htmlacademy.ru" class="search_form" method="get">
                             <div class="search_wrap">
                                 <button type="submit" class="search"></button>
                                 <div class="searching_field">
@@ -50,9 +50,11 @@
                         <div class="entrance">
                             <a class="login" href="#">Вход</a>
                             <div class="login_wrap">
-                                <form class="login_form" action="#" method="post">
-                                    <input class="text_field" type="text" name="login_field" placeholder="Электронная почта">
-                                    <input class="text_field" type="password" name="password_field" placeholder="Пароль">
+                                <form class="login_form" action="https://echo.htmlacademy.ru" method="post">
+                                    <input class="text_field" id="email" type="text" name="login_field" placeholder="Электронная почта">
+                                    <label class="text_field_label_email" for="email">Электронная почта</label>
+                                    <input class="text_field" id="pass" type="password" name="password_field" placeholder="Пароль">
+                                    <label class="text_field_label_pass" for="pass">Пароль</label>
                                     <input class="button" type="submit" value="Войти">
                                     <div class="login_form_links">
                                         <a href="#">Забыли пароль?</a>
@@ -169,8 +171,9 @@
                         <div class="notspam_backgr">
                             <div class="notspam">
                                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                                <form action="#" method="post">
-                                    <input class="text_field" type="email" name="subscribe_email" placeholder="Электронная почта">
+                                <form action="https://echo.htmlacademy.ru" method="post">
+                                    <label for="email2">Электронная почта</label>
+                                    <input class="text_field" id="email2" type="email" name="subscribe_email" placeholder="Электронная почта">
                                     <button class="button notspam_button" type="submit">Отправить</button>
                                 </form>
                             </div>
@@ -219,9 +222,11 @@
             <div class="feedback_modal">
                 <h3 class="h3 feedback_modal_h3">Мы обязательно вам ответим!</h3>
                 <button class="feedback_modal_close" type="button" title="Закрыть"></button>
-                <form action="#" class="feedback_form" method="post">
-                    <input class="text_field" type="text" name="feedback_name" placeholder="Как вас зовут?">
-                    <input class="text_field" type="email" name="feedback_email" placeholder="Ваша почта для ответа?">
+                <form action="https://echo.htmlacademy.ru" class="feedback_form" method="post">
+                    <input class="text_field" id="name" type="text" name="feedback_name" placeholder="Как вас зовут?">
+                    <label for="name">Как вас зовут?</label>
+                    <input class="text_field" id="email3" type="email" name="feedback_email" placeholder="Ваша почта для ответа?">
+                    <label for="email3">Ваша почта для ответа?</label>
                     <textarea class="text_field" rows="5" placeholder="Напишите что-нибудь..."></textarea>
                     <input class="button" type="submit" value="Отправить">
                 </form>

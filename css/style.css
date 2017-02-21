@@ -459,6 +459,7 @@ ul.main_menu > li {
 }
 
 .login_form {
+    display: block;
     position: absolute;
     z-index: 5;
     top: 37px;
@@ -667,6 +668,25 @@ ul.main_menu > li {
     border: 1px solid #d3d3d2;
 }
 
+.text_field_label_email,
+.text_field_label_pass {
+    position: absolute;
+    z-index: 40;
+    left: 34px;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.text_field_label_email {
+    top: 5px;
+}
+
+.text_field_label_pass {
+    top: 72px;
+}
+
 .text_field:hover {
     border: 1px solid rgba(154, 154, 154, 0.52);
     box-shadow: 0 0 0 1px rgba(154, 154, 154, 0.52);
@@ -675,6 +695,14 @@ ul.main_menu > li {
 .text_field:focus {
     border: 1px solid rgba(46, 136, 228, 0.52);
     box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.52);
+}
+
+.text_field:focus + label {
+    color: #5b9ddf;
+}
+
+.text_field:valid + label {
+    color: #999999;
 }
 
 .workday {
@@ -782,8 +810,8 @@ ul.main_menu > li {
 
 .select_list {
     margin-right: 14px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 14px;
+    padding-right: 14px;
     height: 35px;
     border-radius: 18px/50%;
     background-color: rgb(167, 184, 174);
@@ -793,13 +821,14 @@ ul.main_menu > li {
     color: #ffffff;
     border: none;
     cursor: pointer;
+    -webkit-appearance: none;
 }
 
 .select::after {
     position: absolute;
     z-index: 1;
     content: "▼";
-    right: 15px;
+    right: 14px;
     bottom: 0;
     padding-top: 7px;
     padding-right: 7px;
@@ -873,6 +902,7 @@ ul.main_menu > li {
 .radio_inner label {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     padding-left: 11px;
     margin-right: 35px;
 }
@@ -921,6 +951,7 @@ ul.main_menu > li {
 .check_inner label {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     margin-right: 35px;
     padding-left: 12px;
     padding-right: 2px;
@@ -1595,6 +1626,7 @@ a.footer_logo {
 
 .footer_contacts p > a {
     display: inline-block;
+    vertical-align: baseline;
     text-decoration: none;
     color: #ffffff;
     box-shadow: 0 0.5px 0 0 #ffffff;
