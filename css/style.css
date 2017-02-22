@@ -459,7 +459,7 @@ ul.main_menu > li {
 }
 
 .login_form {
-    display: block;
+    /*display: block;*/
     position: absolute;
     z-index: 5;
     top: 37px;
@@ -800,7 +800,7 @@ ul.main_menu > li {
 .radio_inner,
 .check_inner,
 .check_button {
-    margin-right: 12px;
+    margin-right: 16px;
     padding: 0 15px;
     padding-top: 7px;
     height: 28px;
@@ -808,10 +808,14 @@ ul.main_menu > li {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.range_inner {
+    margin-left: 2px;
+}
+
 .select_list {
-    margin-right: 14px;
+    margin-right: 16px;
     padding-left: 14px;
-    padding-right: 14px;
+    padding-right: 33px;
     height: 35px;
     border-radius: 18px/50%;
     background-color: rgb(167, 184, 174);
@@ -824,17 +828,21 @@ ul.main_menu > li {
     -webkit-appearance: none;
 }
 
+.select_list:focus {
+    outline: none;
+}
+
 .select::after {
     position: absolute;
     z-index: 1;
     content: "▼";
-    right: 14px;
+    right: 12px;
     bottom: 0;
     padding-top: 7px;
     padding-right: 7px;
     width: 27px;
     height: 28px;
-    font-size: 12px;
+    font-size: 8px;
     border-top-right-radius: 18px 50%;
     border-bottom-right-radius: 18px 50%;
     background-color: rgb(167, 184, 174);
@@ -842,6 +850,16 @@ ul.main_menu > li {
 }
 
 .select_list option {
+    color: black;
+    background-color: white;
+}
+
+.select_list:hover {
+    color: black;
+    background-color: white;
+}
+
+.select:hover::after {
     color: black;
     background-color: white;
 }
@@ -894,7 +912,7 @@ ul.main_menu > li {
 
 .radio_inner {
     position: relative;
-    padding-left: 35px;
+    padding-left: 33px;
     padding-right: 20px;
     padding-top: 8px;
 }
@@ -1087,12 +1105,12 @@ h1.headline2 {
 
 .item_button {
     position: absolute;
-    display: none;
+    display: block;
     z-index: 4;
-    top: 333px;
-    left: 32px;
+    top: 336px;
+    left: 33px;
     /*right: 32px;*/
-    padding: 12px 16px;
+    padding: 11px 16px;
 }
 
 .catalog_item b {
@@ -1127,10 +1145,10 @@ h1.headline2 {
 
 .item_overlay {
     position: absolute;
-    display: none;
+    display: block;
     z-index: 1;
-    top: -10px;
-    left: -10px;
+    top: -5px;
+    left: -11px;
     width: 293px;
     height: 405px;
     border-radius: 5px;
