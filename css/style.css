@@ -404,6 +404,18 @@ ul.main_menu > li {
     width: 100%;
 }
 
+.text_field_label_search {
+    opacity: 0;
+    position: absolute;
+    z-index: 40;
+    top: 6px;
+    left: 32px;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    text-align: left;
+}
+
 .entrance,
 .basket,
 .basket_full {
@@ -670,6 +682,7 @@ ul.main_menu > li {
 
 .text_field_label_email,
 .text_field_label_pass {
+    opacity: 0;
     position: absolute;
     z-index: 40;
     left: 34px;
@@ -697,12 +710,14 @@ ul.main_menu > li {
     box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.52);
 }
 
-.text_field:focus + label {
-    color: #5b9ddf;
-}
-
 .text_field:valid + label {
     color: #999999;
+    opacity: 1;
+}
+
+.text_field:focus + label {
+    opacity: 1;
+    color: #5b9ddf;
 }
 
 .workday {
@@ -1105,7 +1120,7 @@ h1.headline2 {
 
 .item_button {
     position: absolute;
-    display: block;
+    display: none;
     z-index: 4;
     top: 336px;
     left: 33px;
@@ -1145,7 +1160,7 @@ h1.headline2 {
 
 .item_overlay {
     position: absolute;
-    display: block;
+    display: none;
     z-index: 1;
     top: -5px;
     left: -11px;
@@ -1409,6 +1424,7 @@ h1.headline2 {
 
 .feedback_form {
     display: block;
+    position: relative;
 }
 
 .feedback_form input {
@@ -1430,6 +1446,36 @@ h1.headline2 {
     margin-bottom: 0;
     padding: 12px 24px;
     width: 140px;
+}
+
+.text_field_label_name,
+.text_field_label_email3 {
+    opacity: 0;
+    position: absolute;
+    z-index: 40;
+    left: 16px;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.text_field_label_name {
+    top: -16px;
+}
+
+.text_field_label_email3 {
+    top: 54px;
+}
+
+.text_field:valid + label {
+    color: #999999;
+    opacity: 1;
+}
+
+.text_field:focus + label {
+    opacity: 1;
+    color: #5b9ddf;
 }
 
 .modal_overlay {
